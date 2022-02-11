@@ -1,0 +1,110 @@
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+#class_part {
+    margin-bottom: 80px;
+
+    .class_mal {
+        text-align: center;
+
+        .class_menu {
+            background: #f1f1f1;
+            margin-bottom: 20px;
+
+            li {
+                width: 16.666%;
+
+                &:hover {
+                    background: rgba(255, 14, 14, 0.2);
+                }
+
+                .active{
+                    color: $hcolor;
+                }
+
+                button {
+                    @include fon ($fcolor1, 14px, 400, $os, uppercase, 50px);
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .tabs_body {
+
+        ul {
+
+            li {
+                @include fon ($fcolor2, 16px, 400, $op, capitalize, auto);
+                background: $bgcolor;
+                margin-right: 5px;
+                padding: 0 38px;
+                width: 19.65%;
+                transition: all linear 0.2s;
+                -webkit-transition: all linear 0.2s;
+                -moz-transition: all linear 0.2s;
+                -ms-transition: all linear 0.2s;
+                -o-transition: all linear 0.2s;
+
+                p{
+                    &:first-child{
+                        padding-top: 50px;
+                    }
+
+                    &:last-child{
+                        padding-bottom: 50px;
+                        font-size: 14px;
+                    }
+                }
+
+                svg{
+                   margin: 5px 0;
+                }
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4),
+                &:nth-child(5) {
+                    margin-bottom: 5px;
+                }
+
+                &:nth-child(5),
+                &:nth-child(10) {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    background: $mcolor;
+                    color: #fff;
+
+                }
+
+                &:hover svg {
+                    fill: #ffffff;
+                }
+
+                svg {
+                    fill: #444;
+                    transition: all linear 0.2s;
+                    -webkit-transition: all linear 0.2s;
+                    -moz-transition: all linear 0.2s;
+                    -ms-transition: all linear 0.2s;
+                    -o-transition: all linear 0.2s;
+                }
+            }
+        }
+    }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: $mcolor !important;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}

@@ -1,0 +1,70 @@
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+#member {
+    margin-bottom: 80px;
+
+    .first_mem,
+    .second_mem {
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+
+        h6 {
+            @include fon ($fcolor1, 16px, 700, $os, uppercase, auto);
+            padding: 20px 0 !important;
+            background: #dddd;
+        }
+
+        h4 {
+            @include fon ($hcolor, 50px, 500, $os, uppercase, 120px);
+
+            span {
+                @include fon ($hcolor, 29px, 500, $os, uppercase, auto);
+            }
+        }
+
+        ul {
+
+            li {
+                @include fon ($fcolor2, 14px, 400, $op, capitalize, 35px);
+                background: #f1f1f1;
+
+                &:first-child {
+                    padding-top: 30px !important;
+                }
+
+                &:last-child {
+                    padding-bottom: 30px !important;
+                }
+            }
+        }
+
+        a {
+            @include fon ($fcolor1, 16px, 400, $os, uppercase, auto);
+            display: block;
+            padding: 10px 0 !important;
+            background: #dddd;
+        }
+    }
+
+    .second_mem {
+
+        h6,
+        a {
+            background: #e23e38;
+            color: $hcolor !important;
+        }
+    }
+}

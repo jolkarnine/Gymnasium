@@ -1,0 +1,9 @@
+@import '../vars/variables';
+
+%h_fonts{
+    color: $fcolor1;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $os;
+    text-transform: uppercase;
+}

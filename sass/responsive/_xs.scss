@@ -1,0 +1,449 @@
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+@media (max-width: 575.98px) {
+
+    .main_menu {
+        position: sticky !important;
+        background: $mcolor;
+        top: 0;
+
+        .navbar-brand {
+            width: 170px;
+            height: 50px;
+            line-height: 0;
+            margin-left: 15px;
+
+            img {
+                width: 110px;
+                padding-top: 3px;
+            }
+        }
+
+        .navbar-toggler {
+            color: $hcolor;
+            font-size: 25px;
+            transition: all linear 0.3s;
+            -webkit-transition: all linear 0.3s;
+            -moz-transition: all linear 0.3s;
+            -ms-transition: all linear 0.3s;
+            -o-transition: all linear 0.3s;
+
+            &:focus {
+                box-shadow: 0 0 0 0;
+            }
+
+            &:active {
+                transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+            }
+        }
+
+        ul {
+            background: $mcolor;
+            text-align: center;
+            width: 40%;
+
+            li {
+                border-bottom: 1px solid $fcolor3;
+
+                a {
+                    line-height: 30px;
+                }
+
+                &:first-child {
+                    border-top: 1px solid $fcolor3;
+                }
+            }
+        }
+    }
+
+    .fixd {
+        position: sticky !important;
+    }
+
+    /*--menu part end*/
+
+    #banner {
+
+        .banner_item {
+            margin-bottom: 40px;
+            padding: 80px 0 90px;
+
+            .banner_text {
+
+                h2 {
+                    @include fon ($hcolor, 25px, 700, $os, uppercase, auto);
+                }
+
+                h1 {
+                    @include fon ($mcolor, 40px, 700, $os, uppercase, 70px);
+                }
+
+                p {
+                    padding: 10px 25px 0 25px !important;
+                }
+
+                a {
+                    margin-left: -15px !important;
+
+                    &:last-child {
+                        margin-left: -5px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    /*--banner part end*/
+
+    #about_part {
+        margin-bottom: 40px;
+
+        .about_text {
+            padding: 0;
+
+            p {
+                margin-bottom: 30px !important;
+                text-align: justify;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    /*--about part end*/
+
+    #gallery_part {
+        margin-bottom: 40px;
+
+        .gub {
+            margin-bottom: 24px;
+        }
+    }
+
+    /*--gallery part end*/
+
+    #team_part {
+        margin-bottom: 40px;
+
+        .team_main {
+            margin-top: 0;
+            margin-bottom: 40px;
+
+            &:hover {
+                transform: none !important;
+                -webkit-transform: none !important;
+                -moz-transform: none !important;
+                -ms-transform: none !important;
+                -o-transform: none !important;
+            }
+
+        }
+
+        .titu {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .team_overlay {
+        opacity: 1 !important;
+
+        ul {
+            position: absolute;
+            right: 20px !important;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+
+            li {
+
+                &:first-child {
+                    transform: none !important;
+                    -webkit-transform: none !important;
+                    -moz-transform: none !important;
+                    -ms-transform: none !important;
+                    -o-transform: none !important;
+                }
+
+                &:nth-child(2) {
+                    transform: none !important;
+                    -webkit-transform: none !important;
+                    -moz-transform: none !important;
+                    -ms-transform: none !important;
+                    -o-transform: none !important;
+                }
+
+                &:nth-child(3) {
+                    transform: none !important;
+                    -webkit-transform: none !important;
+                    -moz-transform: none !important;
+                    -ms-transform: none !important;
+                    -o-transform: none !important;
+                }
+            }
+        }
+    }
+
+    .team_text {
+        border-top: 0;
+        border: 1px solid #ddd !important;
+
+        p {
+            opacity: 1 !important;
+            padding: 10px 15px 15px 15px !important;
+        }
+    }
+
+    /*--team part end*/
+
+    #testimonial {
+        margin-bottom: 40px;
+
+        .testi_part {
+            padding-top: 25px;
+            padding-bottom: 16px;
+
+            .test_text {
+                padding: 0 20px;
+
+                .row {
+                    padding-right: 0 !important;
+
+                    .col-lg-2,
+                    .col-4 {
+                        padding-right: 0 !important;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            /*dots*/
+            .test_slide {
+
+                ul {
+
+                    .slick-active button {
+                        width: 15px;
+                        height: 15px;
+                    }
+
+                    li {
+                        button {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--testimomial part end*/
+
+    #member {
+        margin-bottom: 20px;
+
+        .first_mem,
+        .second_mem {
+            margin-bottom: 30px;
+
+            &:hover {
+                transform: none !important;
+                -webkit-transform: none !important;
+                -moz-transform: none !important;
+                -ms-transform: none !important;
+                -o-transform: none !important;
+            }
+
+            h6 {
+                @include fon ($fcolor1, 14px, 700, $os, uppercase, auto);
+                padding: 15px 0 !important;
+            }
+
+            h4 {
+                @include fon ($hcolor, 35px, 500, $os, uppercase, 65px);
+
+                span {
+                    @include fon ($hcolor, 18px, 500, $os, uppercase, auto);
+                }
+            }
+
+            ul {
+
+                li {
+                    @include fon ($fcolor2, 13px, 400, $op, capitalize, 30px);
+
+                    &:first-child {
+                        padding-top: 15px !important;
+                    }
+
+                    &:last-child {
+                        padding-bottom: 15px !important;
+                        margin-bottom: 0 !important;
+                    }
+                }
+            }
+
+            a {
+                @include fon ($fcolor1, 14px, 400, $os, uppercase, auto);
+                padding: 12px 0 !important;
+            }
+        }
+
+        .second_mem {
+            margin-bottom: 30px;
+        }
+    }
+
+    /*--member part end*/
+
+    #counter {
+        margin-bottom: 40px;
+        padding: 25px 0;
+
+        .counter_text {
+            h2 {
+                @include fon ($hcolor, 26px, 700, $os, uppercase, auto);
+            }
+
+            p {
+                @include fon ($hcolor, 12px, 400, $os, unset, auto);
+            }
+        }
+    }
+
+    /*--counter part end*/
+
+    #class_part {
+        margin-bottom: 45px;
+
+        .class_mal {
+
+            .class_menu {
+
+                li {
+                    width: 33.33%;
+
+                    button {
+                        border: 1px solid $hcolor !important;
+                        @include fon ($fcolor1, 12px, 400, $os, uppercase, 40px);
+                    }
+                }
+            }
+
+            .tabs_body {
+                ul {
+                    li {
+                        @include fon ($fcolor2, 13px, 400, $op, capitalize, auto);
+                        margin-right: 5px;
+                        padding: 0 32px;
+                        width: 49.16%;
+
+                        p {
+                            &:first-child {
+                                padding-top: 10px !important;
+                            }
+
+                            &:last-child {
+                                padding-bottom: 10px !important;
+                                font-size: 12px !important;
+                            }
+                        }
+
+                        &:nth-child(6),
+                        &:nth-child(7),
+                        &:nth-child(8) {
+                            margin-bottom: 5px;
+                        }
+
+                        &:nth-child(2),
+                        &:nth-child(4),
+                        &:nth-child(6),
+                        &:nth-child(8),
+                        &:nth-child(10) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*--class part end*/
+
+    #logo_part {
+        margin-bottom: 40px;
+    }
+
+    /*--logo part end*/
+
+    #footer_part {
+
+        .footer_mal {
+
+            .footer_head {
+                padding: 15px 0 !important;
+            }
+        }
+
+        .footer_middle {
+            padding: 15px 0 !important;
+
+            .f_head {
+                margin-bottom: 15px !important;
+
+                h6{
+                    font-size: 12px !important;
+                    line-height: 20px !important;
+                }
+            }
+
+            .one,
+            .two,
+            .three {
+                margin-bottom: 30px;
+            }
+
+            .one,
+            .two,
+            .three,
+            .four{
+                p {
+                    font-size: 11px !important;
+                    line-height: 20px !important;
+                }
+            }
+
+            .three {
+                ul {
+                    li {
+                        width: 22.47% !important;
+                    }
+                }
+            }
+        }
+
+        .footer_bottom {
+            padding: 10px 0 !important;
+
+            p {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    /*--footer part end*/
+
+}

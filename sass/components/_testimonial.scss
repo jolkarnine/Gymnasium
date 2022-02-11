@@ -1,0 +1,77 @@
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+#testimonial {
+    margin-bottom: 80px;
+
+    .testi_part {
+        padding: 30px 0;
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: ' ';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: -1;
+        }
+
+        .test_text {
+            z-index: 2;
+            color: #fff;
+
+            h5 {
+                @include fon ($hcolor, 14px, 400, $os, uppercase, auto);
+            }
+
+            h6 {
+                @include fon ($hcolor, 14px, 400, $os, capitalize, 25px);
+            }
+
+            i {
+                color: $mcolor;
+            }
+
+            p {
+                margin-top: 5px !important;
+                @include fon ($fcolor3, 13px, 400, $op, unset, auto);
+            }
+        }
+
+        /*dots*/
+        .test_slide {
+
+            ul {
+                display: flex;
+                justify-content: center;
+
+                .slick-active button{
+                    width: 20px;
+                    height: 20px;
+                    background: $mcolor;
+                    border-color: $mcolor;
+                }
+
+                li {
+                    button {
+                        font-size: 0;
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid $hcolor;
+                        background: transparent;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        margin: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

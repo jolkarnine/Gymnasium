@@ -1,0 +1,32 @@
+@import '../vars/variables';
+
+.btt {
+    color: $mcolor;
+    position: fixed;
+    content: ' ';
+    right: 40px;
+    bottom: 40px;
+    font-size: 45px;
+    z-index: 999;
+    line-height: 0;
+    padding: 0;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    display: none;
+
+    &:hover {
+        background: $fcolor3;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    .fad {
+        line-height: 40px;
+    }
+}

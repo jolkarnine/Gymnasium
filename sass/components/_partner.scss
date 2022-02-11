@@ -1,0 +1,44 @@
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+#logo_part {
+    margin-bottom: 80px;
+
+    .logos {
+
+        .claint_logo {
+            margin: 0 6px;
+        }
+    }
+
+    .nxt_arr,
+    .prv_arr {
+        position: absolute;
+        top: 50%;
+        font-size: 20px;
+        color: $fcolor2;
+        width: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transition: all linear 0.2s;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+
+        &:hover{
+            color: $mcolor;
+        }
+    }
+
+    .prv_arr {
+        left: -40px;
+    }
+
+    .nxt_arr {
+        right: -40px;
+    }
+}

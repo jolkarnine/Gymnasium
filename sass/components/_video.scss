@@ -1,0 +1,73 @@
+@import '../extends/extendone';
+@import '../mixins/mixinsone';
+@import '../vars/variables';
+
+.all_head{
+    img{
+        padding-bottom: 30px;
+    }
+
+    h3{
+        @extend %h_fonts;
+    }
+}
+
+/*extend end*/
+
+#about_part {
+    margin-bottom: 80px;
+
+    .about_image {
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            content: ' ';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+
+            a {
+                width: 48px;
+                height: 48px;
+                background: #ff4141;
+                color: #222;
+                text-align: center;
+                line-height: 48px;
+                font-size: 23px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+
+                i{
+                    padding-left: 3px;
+                }
+            }
+        }
+    }
+
+    .about_text{
+        padding: 0 20px;
+
+        p{
+            @include fon ($fcolor2, 14px, 400, $op, unset, auto);
+
+            span{
+                display: block;
+                margin-top: 25px !important;
+            }
+        }
+    }
+}
